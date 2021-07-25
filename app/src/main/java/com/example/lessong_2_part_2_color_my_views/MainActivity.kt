@@ -8,12 +8,18 @@ import com.example.lessong_2_part_2_color_my_views.model.DataClassForBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    lateinit var bindingClass : DataClassForBinding
+    lateinit var bindingClass: DataClassForBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        bindingClass = DataClassForBinding("Hello Emdad!")
+        bindingClass = DataClassForBinding(
+            getString(R.string.box_one),
+            getString(R.string.box_two),
+            getString(R.string.box_three),
+            getString(R.string.box_four),
+            getString(R.string.box_five),
+        )
 
         binding.bindingClass = bindingClass
     }

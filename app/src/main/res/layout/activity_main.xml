@@ -16,13 +16,75 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_boxOne"
+            style="@style/WhiteBox"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{bindingClass.text}"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{bindingClass.boxOne}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Box One" />
+
+        <TextView
+            android:id="@+id/tv_boxTwo"
+            style="@style/WhiteBox"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{bindingClass.boxTwo}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_boxOne"
+            tools:text="Box One" />
+
+        <TextView
+            android:id="@+id/boxThree"
+            style="@style/WhiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_wide"
+            android:layout_marginRight="@dimen/margin_wide"
+            android:text="@{bindingClass.boxThree}"
+            app:layout_constraintBottom_toTopOf="@+id/boxFour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
+            app:layout_constraintTop_toTopOf="@+id/tv_boxTwo"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="box three" />
+
+        <TextView
+            android:id="@+id/boxFour"
+            style="@style/WhiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_wide"
+            android:layout_marginRight="@dimen/margin_wide"
+            android:text="@{bindingClass.boxFour}"
+            app:layout_constraintBottom_toTopOf="@+id/boxFive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
+            app:layout_constraintTop_toBottomOf="@+id/boxThree"
+            tools:text="box Four" />
+
+        <TextView
+            android:id="@+id/boxFive"
+            style="@style/WhiteBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_wide"
+            android:layout_marginRight="@dimen/margin_wide"
+            android:text="@{bindingClass.boxFive}"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_boxTwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
+            app:layout_constraintTop_toBottomOf="@+id/boxFour"
+            tools:text="box five" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
