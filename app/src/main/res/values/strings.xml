@@ -8,4 +8,6 @@
     <string name="box_yellow">YELLOW</string>
     <string name="box_red">RED</string>
     <string name="box_green">GREEN</string>
+    <string name="how_to_play_property">How to play:</string>
+    <string name="how_to_play_value">Tap on any of the views and change color.</string>
 </resources>

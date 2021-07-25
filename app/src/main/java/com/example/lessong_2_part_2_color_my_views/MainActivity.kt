@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.box_three),
             getString(R.string.box_four),
             getString(R.string.box_five),
+            getString(R.string.how_to_play_property),
+            getString(R.string.how_to_play_value)
         )
 
         binding.bindingClass = bindingClass
