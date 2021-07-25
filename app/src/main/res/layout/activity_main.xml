@@ -44,14 +44,14 @@
             tools:text="Box One" />
 
         <TextView
-            android:id="@+id/boxThree"
+            android:id="@+id/tv_boxThree"
             style="@style/WhiteBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_wide"
             android:layout_marginRight="@dimen/margin_wide"
             android:text="@{bindingClass.boxThree}"
-            app:layout_constraintBottom_toTopOf="@+id/boxFour"
+            app:layout_constraintBottom_toTopOf="@+id/tv_boxFour"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
             app:layout_constraintTop_toTopOf="@+id/tv_boxTwo"
@@ -59,21 +59,21 @@
             tools:text="box three" />
 
         <TextView
-            android:id="@+id/boxFour"
+            android:id="@+id/tv_boxFour"
             style="@style/WhiteBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_wide"
             android:layout_marginRight="@dimen/margin_wide"
             android:text="@{bindingClass.boxFour}"
-            app:layout_constraintBottom_toTopOf="@+id/boxFive"
+            app:layout_constraintBottom_toTopOf="@+id/tv_boxFive"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
-            app:layout_constraintTop_toBottomOf="@+id/boxThree"
+            app:layout_constraintTop_toBottomOf="@+id/tv_boxThree"
             tools:text="box Four" />
 
         <TextView
-            android:id="@+id/boxFive"
+            android:id="@+id/tv_boxFive"
             style="@style/WhiteBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/tv_boxTwo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tv_boxTwo"
-            app:layout_constraintTop_toBottomOf="@+id/boxFour"
+            app:layout_constraintTop_toBottomOf="@+id/tv_boxFour"
             tools:text="box five" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
