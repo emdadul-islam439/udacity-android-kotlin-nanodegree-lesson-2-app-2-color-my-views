@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="bindingClass"
             type="com.example.lessong_2_part_2_color_my_views.model.DataClassForBinding" />
