@@ -22,7 +22,10 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.box_four),
             getString(R.string.box_five),
             getString(R.string.how_to_play_property),
-            getString(R.string.how_to_play_value)
+            getString(R.string.how_to_play_value),
+            getString(R.string.btn_red_text),
+            getString(R.string.btn_yellow_text),
+            getString(R.string.btn_green_text),
         )
 
         binding.bindingClass = bindingClass
@@ -35,7 +38,10 @@ class MainActivity : AppCompatActivity() {
             binding.tvBoxTwo,
             binding.tvBoxThree,
             binding.tvBoxFour,
-            binding.tvBoxFive
+            binding.tvBoxFive,
+            binding.btnGreen,
+            binding.btnRed,
+            binding.btnYellow
         )
         for(view in clickableViews){
             view.setOnClickListener {
@@ -55,6 +61,11 @@ class MainActivity : AppCompatActivity() {
             binding.tvBoxThree -> view.setBackgroundResource(android.R.color.holo_orange_light)
             binding.tvBoxFour -> view.setBackgroundResource(android.R.color.holo_green_dark)
             binding.tvBoxFive -> view.setBackgroundResource(android.R.color.holo_blue_bright)
+
+            // Boxes using custom colors for background
+            binding.btnRed -> binding.tvBoxThree.setBackgroundColor(Color.RED)
+            binding.btnYellow -> binding.tvBoxFour.setBackgroundColor(Color.YELLOW)
+            binding.btnGreen -> binding.tvBoxFive.setBackgroundColor(Color.GREEN)
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }

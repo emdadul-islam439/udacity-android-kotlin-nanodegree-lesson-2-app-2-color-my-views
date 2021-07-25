@@ -7,5 +7,8 @@ data class DataClassForBinding(
     var boxFour : String = "Box Four",
     var boxFive : String = "Box Five",
     var howToPlayProperty : String = "How to play:",
-    var howToPlayValue : String = "Tap on any of the views and change color."
+    var howToPlayValue: String = "",
+    var btnRedText : String = "",
+    var btnYellowText : String = "",
+    var btnGreenText : String = "",
 )

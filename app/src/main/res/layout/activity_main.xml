@@ -93,21 +93,56 @@
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="16dp"
-            android:textSize="18sp"
             android:text="@{bindingClass.howToPlayProperty}"
-            tools:text="TextView"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_boxTwo"/>
+            app:layout_constraintTop_toBottomOf="@id/tv_boxTwo"
+            tools:text="TextView" />
 
         <TextView
             android:id="@+id/tv_howToPlayValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{bindingClass.howToPlayValue}"
-            tools:text="TextView"
             android:layout_marginLeft="16dp"
+            android:text="@{bindingClass.howToPlayValue}"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_howToPlayProperty"
-            app:layout_constraintStart_toEndOf="@+id/tv_howToPlayProperty" />
+            app:layout_constraintStart_toEndOf="@+id/tv_howToPlayProperty"
+            tools:text="TextView" />
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Button"
+            android:text="@{bindingClass.btnRedText}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_yellow"
+            app:layout_constraintEnd_toStartOf="@+id/btn_yellow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Button"
+            android:text="@{bindingClass.btnYellowText}"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_green"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_red"
+            app:layout_constraintTop_toBottomOf="@+id/tv_howToPlayValue" />
+
+        <Button
+            android:id="@+id/btn_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Button"
+            android:text="@{bindingClass.btnGreenText}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_yellow" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

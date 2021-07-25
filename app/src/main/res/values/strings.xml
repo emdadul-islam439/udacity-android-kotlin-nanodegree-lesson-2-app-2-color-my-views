@@ -5,9 +5,9 @@
     <string name="box_three">Box Three</string>
     <string name="box_four">Box Four</string>
     <string name="box_five">Box Five</string>
-    <string name="box_yellow">YELLOW</string>
-    <string name="box_red">RED</string>
-    <string name="box_green">GREEN</string>
+    <string name="btn_yellow_text">YELLOW</string>
+    <string name="btn_red_text">RED</string>
+    <string name="btn_green_text">GREEN</string>
     <string name="how_to_play_property">How to play:</string>
     <string name="how_to_play_value">Tap on any of the views and change color.</string>
 </resources>
