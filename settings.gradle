@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "lessong_2_part_2_color_my_views"
